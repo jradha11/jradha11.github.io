@@ -1,0 +1,13 @@
+.footer{
+    text-align: left;
+    font-size: 14px;
+    color: var(--light-secondary-text);
+    width: fit-content;
+    display: inline;
+    position: absolute;
+    bottom: 0;
+}
+
+.footer-link{
+    color: var(--light-secondary-text);
+}
