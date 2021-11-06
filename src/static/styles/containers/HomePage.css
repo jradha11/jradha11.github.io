@@ -1,0 +1,61 @@
+.homepage-wrapper{
+    position: relative;
+    height: 92vh;
+}
+.my-name{
+    font-size: 64px;
+    font-weight: bold;
+    letter-spacing: 0.08em;
+    color: var(--light-dark-text);
+    margin: 0;
+    margin-bottom: 0.6em;
+}
+
+.homepage-subtext{
+    color: var(--light-primary-text);
+    font-size: 24px;
+    margin: 0;
+}
+
+.software-text{
+    font-family: 'Courier Prime';
+    font-weight: bold;
+}
+
+.design-text{
+    font-family: 'Sarina';
+}
+
+.homepage-container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.trapezoid{
+    display: inline-block;
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    width: 40vw;
+    height: 92vh;
+	transform: skew(20deg);
+	background: var(--light-primary-blue);
+}
+
+.my-img{
+    height: 92vh;
+    float: right;
+}
+
+.homepage-header{
+    padding: 2em 15vw;
+    padding-right: 0;
+}
+
+.homepage-social-media{
+    margin-top: 2em;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+}
