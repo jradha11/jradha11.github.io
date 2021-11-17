@@ -3,10 +3,9 @@
     font-size: 14px;
     color: var(--light-secondary-text);
     display: inline;
-    width: fit-content;
+    width: 100%;
     position: absolute;
-    display: inline;
-    bottom: 0;
+    bottom: 6px;
 }
 
 .footer-link{
