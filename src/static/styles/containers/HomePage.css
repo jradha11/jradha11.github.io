@@ -35,11 +35,12 @@
 .trapezoid{
     display: inline-block;
     position: absolute;
-    z-index: -1;
-    top: 0;
-    width: 40vw;
+    z-index: -2;
+    bottom: 0;
+    right: 0;
+    width: 50vw;
     height: 92vh;
-	transform: skew(20deg);
+    transform: skewY(20deg);
 	background: var(--light-primary-blue);
 }
 
@@ -58,4 +59,9 @@
     width: 50%;
     display: flex;
     justify-content: space-between;
+}
+
+.footer-div-homepage{
+    padding-left: 2vw;
+    padding-bottom: 0;
 }

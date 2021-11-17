@@ -39,11 +39,13 @@ const HomePage = () => {
                     <img src={radhanobg} alt='radha-img' className='my-img'/>
                 </div>
             </div>
-            <div className='trapezoid'>
+            {/* add background css later */}
+            {/* <div className='trapezoid'>
 
+            </div> */}
+            <div className='footer-div-homepage'>
+                <Footer/>
             </div>
-            
-            {/* <Footer/> */}
         </div>
     )
 }

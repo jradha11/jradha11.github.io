@@ -1,10 +1,11 @@
 .footer{
-    text-align: left;
+    text-align: center;
     font-size: 14px;
     color: var(--light-secondary-text);
-    width: fit-content;
     display: inline;
+    width: fit-content;
     position: absolute;
+    display: inline;
     bottom: 0;
 }
 
