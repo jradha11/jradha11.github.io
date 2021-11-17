@@ -1,0 +1,34 @@
+.section-heading{
+    font-size: 24px;
+    margin-bottom: 6px;
+}
+
+.subheading-container{
+    display: flex;
+    justify-content: space-between;
+}
+
+.section-subheading{
+    margin: 0;
+    font-size: 16px;
+    color: var(--light-secondary-text);
+}
+
+.view-more-link{
+    color: var(--light-secondary-blue);
+    font-size: 16px;
+}
+
+.postcards{
+    width: 272px;
+    object-fit: contain;
+    margin-top: 16px;
+}
+
+.postcards-container{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: 16px;
+    margin-bottom: 4em;
+}

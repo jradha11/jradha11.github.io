@@ -7,3 +7,18 @@
     --light-secondary-text: #777777;
 
 }
+
+.page-content-container{
+    padding: 30vh 18vw;
+    padding-bottom: 0;
+}
+
+.bold-blue-text{
+    font-weight: bold;
+    color: var(--light-secondary-blue);
+}
+
+.light-theme-content{
+    color: var(--light-primary-text);
+    line-height: 1.75;
+}

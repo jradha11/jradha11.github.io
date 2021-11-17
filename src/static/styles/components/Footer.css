@@ -2,10 +2,9 @@
     text-align: center;
     font-size: 14px;
     color: var(--light-secondary-text);
-    display: inline;
+    display: block;
     width: 100%;
-    position: absolute;
-    bottom: 6px;
+    margin-bottom: 6px;
 }
 
 .footer-link{
