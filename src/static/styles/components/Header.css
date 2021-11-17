@@ -1,0 +1,21 @@
+.header-container{
+    background-color: var(--light-primary-blue);
+    text-align: center;
+    padding: 10vh 0 3vh 0;
+    z-index: -1;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.header-heading{
+    font-weight: bold;
+    color: var(--light-secondary-blue);
+    font-size: 48px;
+    margin-bottom: 8px;
+}
+
+.header-subheading{
+    color: var(--light-secondary-blue);
+    margin-top: 0;
+}
