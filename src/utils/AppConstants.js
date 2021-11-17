@@ -22,3 +22,18 @@ export const PAGE_HEADING = {
         "subheading": "People will never be replaced by machines. In the end, life and business are about human connections."
     }
 }
+
+export const WORK_DATA = [
+    {
+        "heading": "heading",
+        "subheading": "subheading",
+        "content": "content",
+        "btn-link": "www.google.co.in"
+    },
+    {
+        "heading": "heading",
+        "subheading": "subheading",
+        "content": "content",
+        "btn_link": "www.google.co.in"
+    }
+]
