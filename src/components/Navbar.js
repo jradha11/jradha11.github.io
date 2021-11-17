@@ -11,10 +11,12 @@ import * as URLS from "../utils/AppUrls"
 const Navbar = () => {
     return(
         <div className='navbar-web'>
-            <div className='navbar-name-container'>
-                <img src={logo} alt="my-logo"/>
-                <p className='navbar-name'> RADHA JAYARAMAN </p>
-            </div>
+            <Link to={URLS.HOME_PAGE} className='remove-underline'>
+                <div className='navbar-name-container'>
+                    <img src={logo} alt="my-logo"/>
+                    <p className='navbar-name'> RADHA JAYARAMAN </p>
+                </div>
+            </Link>
             <div className='navbar-content'>
                 <Link to={URLS.ABOUT_ME} className='remove-underline'>
                     <div className="navbar-items">
