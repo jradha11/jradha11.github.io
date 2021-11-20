@@ -11,8 +11,10 @@ const Header = (props) => {
     const subheading = props.header_data.subheading;
     return(
         <div className='header-container'>
-            <p className='header-heading'> {heading} </p>
-            <p className='header-subheading'> "{subheading}" </p>
+            <div>
+                <p className='header-heading'> {heading} </p>
+                <p className='header-subheading'> "{subheading}" </p>
+            </div>
         </div>
     )
 
