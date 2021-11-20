@@ -1,7 +1,14 @@
 .navbar-web{
     display: flex;
+    flex-direction: column;
+    height: 8vh;
+    justify-content: center;
+}
+
+.navbar-wrapper{
+    display: flex;
     justify-content: space-between;
-    padding: 1.2em 2em;
+    width: 100%;
 }
 
 .navbar-name-container{
@@ -9,6 +16,7 @@
     flex: 1;
     align-items: center;
     color: #2b2b2b;
+    margin-left: 2vw;
 }
 
 .navbar-content{
