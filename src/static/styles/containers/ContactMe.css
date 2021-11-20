@@ -1,7 +1,32 @@
+.contact-content-container{
+    width: 70%;
+}
+
 .contact-me-wrapper{
     display: flex;
 }
 
 .contact-heading{
     font-size: 24px;
+}
+
+.send-btn{
+    padding: 8px 16px;
+    background-color: var(--light-primary-blue);
+    outline: none;
+    border-radius: 4px;
+    border: none;
+    margin: 1.5em 0;
+    width: 100%;
+}
+
+.icon-wrapper{
+    display: flex;
+    align-self: center;
+    color: var(--light-secondary-text);
+}
+
+.other-social-wrapper{
+    display: flex;
+    justify-content: space-between;
 }

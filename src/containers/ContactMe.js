@@ -9,11 +9,20 @@ import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import { PAGE_HEADING } from "../utils/AppConstants";
 import Footer from "../components/Footer";
-
 import img from "../static/images/contact-me.png"
+import { Facebook } from "@material-ui/icons";
+import { Mail } from "@material-ui/icons";
+import { Instagram } from "@material-ui/icons";
+import { GitHub } from "@material-ui/icons";
+import { LinkedIn } from "@material-ui/icons";
+import { FACEBOOK_URL, INSTAGRAM_URL, EMAIL_ADD, GITHUB_URL, LINKEDIN_URL } from "../utils/AppConstants";
 
 const ContactMe = () => {
-    const header_data = PAGE_HEADING['CONTACT_ME']
+    const header_data = PAGE_HEADING['CONTACT_ME'];
+    const color_style = {color: '#777777', marginRight: '8px'};
+    const font_size = 'small';
+    const mail_to = "https://mail.google.com/mail/?view=cm&fs=1&to="+EMAIL_ADD;
+    console.log(mail_to)
     return(
         <div>
             <Navbar/>
@@ -21,11 +30,11 @@ const ContactMe = () => {
             <div className='page-content-container contact-me-wrapper'>
                 <div>
                     <p className='bold-blue-text contact-heading'>I welcome any idea, suggestion or a simple acknowledgement.</p>
-                    <div>
+                    <div className='contact-content-container'>
                         <TextField 
                             id="outlined-basic" 
                             label="Name" variant="outlined" 
-                            style={{width: '60%'}}
+                            style={{width: '100%'}}
                         />
                         <br/>
                         <br/>
@@ -33,16 +42,37 @@ const ContactMe = () => {
                             id="outlined-basic" 
                             label="Message" 
                             variant="outlined" 
-                            style={{width: '60%'}}
                             multiline
                             rows={6}
+                            style={{width: '100%'}}
                         />
+                        <br/>
+                        <button className='send-btn'>
+                            SEND
+                        </button>
+                        <div className='contact-social-wrapper'>
+                            <a href={mail_to} className='icon-wrapper' target='__blank'><Mail style={color_style} fontSize={font_size}/>{EMAIL_ADD}</a>
+                            <br/>
+                            <div className='other-social-wrapper'>
+                                <a href={FACEBOOK_URL} className='icon-wrapper' target='__blank'>
+                                    <Facebook style={color_style} fontSize={font_size}/> facebook
+                                </a>
+                                <a href={INSTAGRAM_URL} className='icon-wrapper' target='__blank'>
+                                    <Instagram style={color_style} fontSize={font_size}/> instagram
+                                </a>
+                                <a href={LINKEDIN_URL} className='icon-wrapper' target='__blank'>
+                                    <LinkedIn style={color_style} fontSize={font_size}/> linkedin
+                                </a>
+                                <a href={GITHUB_URL} className='icon-wrapper' target='__blank'>
+                                    <GitHub style={color_style} fontSize={font_size}/> github
+                                </a>
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <div>
                     <img  src={img} alt="contact-me"/>
                 </div>
-
             </div>
             <Footer/>
         </div>
