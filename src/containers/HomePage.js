@@ -34,6 +34,9 @@ const HomePage = () => {
                         <a href={LINKEDIN_URL}><LinkedIn style={color_style}/></a>
                     </div>
                     <CustomButton text='KNOW MORE' color='red'/>
+                    <div className='footer-div-homepage'>
+                        <Footer/>
+                    </div>
                 </div>
                 <div className='homepage-img-container'>
                     <img src={radhanobg} alt='radha-img' className='my-img'/>
@@ -43,9 +46,6 @@ const HomePage = () => {
             {/* <div className='trapezoid'>
 
             </div> */}
-            <div className='footer-div-homepage'>
-                <Footer/>
-            </div>
         </div>
     )
 }
