@@ -31,7 +31,7 @@ const CreativeCorner = () => {
             </div>
             <div className='view-more-container'>
                 <p className='bold-blue-text'>Liked what you saw? Checkout my insta profile to find some more!</p>
-                <a className='view-more' href={INSTAGRAM_URL}>view more</a>
+                <a className='view-more' href={INSTAGRAM_URL} target='__blank'>view more</a>
             </div>
             <Footer/>
         </div>
