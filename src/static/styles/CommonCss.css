@@ -11,6 +11,7 @@
 .page-content-container{
     padding: 30vh 18vw;
     padding-bottom: 0;
+    min-height: 59vh;
 }
 
 .bold-blue-text{
