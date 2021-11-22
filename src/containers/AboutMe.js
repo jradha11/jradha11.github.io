@@ -27,10 +27,10 @@ const AboutMe = () => {
                 <p className='light-theme-content'>
                     I am a final year undergraduate student at IIT Roorkee persuing my bachelors in Chemical Engineering. 
                     I am a tamilian, born and brought up in Delhi. During the first three years of my college life I’ve explored the Design, Data Science and Web Development. 
-                    I have also contributed to  open-source softwares by contributing to the java bindings of OpenTimelineIO, an API interchange format lead by Pixar Animated Studios.
+                    I have also contributed to  open-source softwares by contributing to the java bindings of <a href='https://github.com/OpenTimelineIO/OpenTimelineIO-Java-Bindings' target='__blank' className='anchor-tag-link'>OpenTimelineIo</a>, an API interchange format lead by Pixar Animated Studios.
                 </p>
                 <p className='light-theme-content'>
-                    Currently, I am working as a Software Developer in a B2C startup called Explorin, 
+                    Currently, I am working as a Software Developer in a B2C startup called <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a>, 
                     that helps freshers and sophomores from engineering colleges to find their career passion.
                 </p>
                 <p className='bold-blue-text'> All work and no play makes Jack a dull boy :( </p>
