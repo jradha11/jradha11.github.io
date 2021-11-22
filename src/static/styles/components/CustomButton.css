@@ -11,3 +11,7 @@
     border: none;
     margin-top: 3em;
 }
+
+.button:hover{
+    cursor: pointer;
+}
