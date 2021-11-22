@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 
 /* css imports */
 import "../static/styles/containers/HomePage.css";
@@ -14,7 +15,8 @@ import { Facebook } from "@material-ui/icons";
 import { Instagram } from "@material-ui/icons";
 import { GitHub } from "@material-ui/icons";
 import { LinkedIn } from "@material-ui/icons";
-import {FACEBOOK_URL, GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL} from "../utils/AppConstants"
+import {FACEBOOK_URL, GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL} from "../utils/AppConstants";
+import * as URLS from "../utils/AppUrls"
 
 
 const HomePage = () => {
@@ -33,7 +35,9 @@ const HomePage = () => {
                         <a href={GITHUB_URL}><GitHub style={color_style}/></a>
                         <a href={LINKEDIN_URL}><LinkedIn style={color_style}/></a>
                     </div>
-                    <CustomButton text='KNOW MORE' color='red'/>
+                    <Link to={URLS.ABOUT_ME} className='remove-underline'>
+                        <CustomButton text='KNOW MORE' color='red'/>
+                    </Link>
                     <div className='footer-div-homepage'>
                         <Footer/>
                     </div>
