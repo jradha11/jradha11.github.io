@@ -24,3 +24,15 @@
     color: var(--light-primary-text);
     line-height: 1.75;
 }
+
+.remove-underline{
+    text-decoration: none;
+}
+
+.anchor-tag-link{
+    color: var(--light-primary-text);
+}
+
+.anchor-tag-link:hover{
+    color: var(--light-dark-text);
+}
