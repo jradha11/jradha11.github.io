@@ -67,3 +67,7 @@
     bottom: 0;
     left: 2vw;
 }
+
+#know-more:hover{
+    cursor: pointer;
+}

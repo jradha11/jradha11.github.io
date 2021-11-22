@@ -38,7 +38,3 @@
     color: var(--light-primary-text);
     font-weight: 600;
 }
-
-.remove-underline{
-    text-decoration: none;
-}

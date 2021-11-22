@@ -10,3 +10,7 @@
 .footer-link{
     color: var(--light-secondary-text);
 }
+
+.footer-link:hover{
+    color: var(--light-primary-text);
+}
