@@ -36,3 +36,7 @@
 .anchor-tag-link:hover{
     color: var(--light-dark-text);
 }
+
+body{
+    overflow-y: overlay;
+}
