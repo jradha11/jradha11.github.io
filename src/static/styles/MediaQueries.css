@@ -121,4 +121,19 @@
         margin: 0 8vw;
     }
 
+    /* about me */
+    p.section-heading{
+        font-size: 20px;
+    }
+
+    .subheading-container{
+        flex-direction: column;
+    }
+
+    .postcards-container{
+        flex-direction: column;
+        width: 100%;
+        align-content: center;
+    }
+
 }
