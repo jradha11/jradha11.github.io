@@ -9,7 +9,7 @@
 }
 
 .page-content-container{
-    padding: 30vh 18vw;
+    padding: 35vh 18vw;
     padding-bottom: 0;
     min-height: 59vh;
     height: fit-content;
@@ -38,5 +38,6 @@
 }
 
 body{
-    overflow-y: overlay;
+    overflow-y: auto;
+    
 }
