@@ -41,3 +41,17 @@ body{
     overflow-y: auto;
     
 }
+
+@media (min-width: 41em) and (max-width: 80em) {
+    .page-content-container{
+        padding: 45vw 12vw;
+        padding-bottom: 0;
+    }
+}
+
+@media screen and (max-width: 40em) {
+    .page-content-container{
+        padding: 35vh 10vw;
+        padding-bottom: 0;
+    }
+}

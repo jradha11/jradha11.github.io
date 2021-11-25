@@ -3,6 +3,9 @@ import React from "react";
 /* css imports */
 import "../static/styles/components/Header.css";
 import "../static/styles/CommonCss.css";
+import "../static/styles/MediaQueries.css";
+
+
 
 /* local imports */
 
