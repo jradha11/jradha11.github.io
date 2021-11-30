@@ -22,7 +22,7 @@ import * as URLS from "../utils/AppUrls"
 const HomePage = () => {
     const color_style = {color: "#777777"}
     return(
-        <div className='homepage-wrapper'>
+        <div>
             <Navbar/>
             <div className='homepage-container'>
                 <div className='homepage-header'>
