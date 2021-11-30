@@ -1,5 +1,6 @@
-.homepage-wrapper{
-    position: relative;
+.homepage-container{
+    position: absolute;
+    top: 8vh;
     height: 92vh;
 }
 .my-name{
