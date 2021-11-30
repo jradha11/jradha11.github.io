@@ -8,9 +8,10 @@ import "../static/styles/CommonCss.css";
 import "../static/styles/MediaQueries.css";
 
 /* local imports */
-import logo from "../static/images/mylogo-light.svg"
+import logo from "../static/images/mylogo-light.svg";
 import * as URLS from "../utils/AppUrls"
 import $ from 'jquery';
+import resume from "../static/radha_resume.pdf"
 
 const Navbar = () => {
     $(window).scroll(function() {
@@ -62,7 +63,7 @@ const Navbar = () => {
                                     </div>
                                 </li>
                             </Link>
-                            <Link to={URLS.RESUME} className='remove-underline'>
+                            <Link to={resume} className='remove-underline' target='__blank'>
                                 <li>
                                     <div className="navbar-items">
                                         resume
