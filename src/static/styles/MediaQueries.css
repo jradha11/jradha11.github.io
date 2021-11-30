@@ -53,6 +53,39 @@
         font-size: 42px;
     }
 
+    /* contact us */
+    .contact-me-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .contact-me-img{
+        width: 312px;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .contact-me-img-div{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    div.contact-content-container{
+        width: 100%;
+    }
+
+    p.contact-heading{
+        font-size: 22px;
+    }
+
+    button.send-btn{
+        padding: 1em 1.5em;
+        margin-bottom: 3em;
+    }
+
+    div.contact-social-wrapper{
+        margin-bottom: 3em;
+    }
+
 }
 
 /* phone */
@@ -64,7 +97,7 @@
     }
     .navTrigger {
         display: block;
-        height: 12px;
+        height: 20px;
         width: 26px;
     }
 
@@ -134,6 +167,51 @@
         flex-direction: column;
         width: 100%;
         align-content: center;
+    }
+
+    /* contact us */
+    .contact-me-wrapper{
+        flex-direction: column-reverse;
+    }
+
+    .contact-me-img{
+        width: 196px;
+        object-fit: contain;
+        margin: auto;
+    }
+
+    .contact-me-img-div{
+        text-align: center;
+        margin-bottom: 2em;
+    }
+
+    div.contact-content-container{
+        width: 100%;
+    }
+
+    p.contact-heading{
+        font-size: 18px;
+    }
+
+    button.send-btn{
+        padding: 1em 1.5em;
+        margin-bottom: 3em;
+    }
+
+    div.contact-social-wrapper{
+        font-size: 16px;
+    }
+
+    div.other-social-wrapper{
+        flex-direction: column;
+        justify-content: flex-start;
+        float: left;
+        margin-bottom: 2em;
+    }
+
+    a.icon-wrapper{
+        align-self: unset;
+        margin-bottom: 0.75em;
     }
 
 }

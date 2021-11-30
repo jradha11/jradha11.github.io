@@ -1,8 +1,10 @@
 import React from "react";
 import { TextField } from "@mui/material";
 /* css imports */
-import "../static/styles/containers/ContactMe.css"
-import "../static/styles/CommonCss.css"
+import "../static/styles/containers/ContactMe.css";
+import "../static/styles/CommonCss.css";
+import "../static/styles/MediaQueries.css";
+
 
 /* local imports */
 import Header from "../components/Header";
@@ -19,7 +21,7 @@ import { FACEBOOK_URL, INSTAGRAM_URL, EMAIL_ADD, GITHUB_URL, LINKEDIN_URL } from
 
 const ContactMe = () => {
     const header_data = PAGE_HEADING['CONTACT_ME'];
-    const color_style = {color: '#777777', marginRight: '8px'};
+    const color_style = {color: '#777777', marginRight: '16px'};
     const font_size = 'small';
     const mail_to = "https://mail.google.com/mail/?view=cm&fs=1&to="+EMAIL_ADD;
     console.log(mail_to)
@@ -70,8 +72,8 @@ const ContactMe = () => {
                         </div>
                     </div>
                 </div>
-                <div>
-                    <img  src={img} alt="contact-me"/>
+                <div className='contact-me-img-div'>
+                    <img  src={img} alt="contact-me" className='contact-me-img'/>
                 </div>
             </div>
             <Footer/>
