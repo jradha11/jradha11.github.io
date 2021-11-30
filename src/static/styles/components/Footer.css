@@ -14,3 +14,9 @@
 .footer-link:hover{
     color: var(--light-primary-text);
 }
+
+@media screen and (max-width: 40em) {
+    .footer{
+        font-size: 12px;
+    }
+}
