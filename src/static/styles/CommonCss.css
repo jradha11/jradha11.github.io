@@ -9,7 +9,7 @@
 }
 
 .page-content-container{
-    padding: 35vh 18vw;
+    padding: 10vh 18vw;
     padding-bottom: 0;
     min-height: 59vh;
     height: fit-content;
@@ -50,14 +50,14 @@ body{
 
 @media (min-width: 41em) and (max-width: 80em) {
     .page-content-container{
-        padding: 45vw 12vw;
+        padding: 10vh 12vw;
         padding-bottom: 0;
     }
 }
 
 @media screen and (max-width: 40em) {
     .page-content-container{
-        padding: 35vh 10vw;
+        padding: 10vh 10vw;
         padding-bottom: 0;
     }
 }
