@@ -6,7 +6,10 @@ import "../static/styles/components/CustomButton.css";
 const CustomButton = (props) => {
     return(
         <button className='button'>
-            {props.text} <span style={{marginLeft: '16px', alignItems: 'center', display: 'flex'}}><ArrowRightAlt/></span> 
+            <span style={{display: 'flex', alignItems: 'center'}}>
+                {props.text} <span style={{marginLeft: '16px', alignItems: 'center', display: 'flex'}}><ArrowRightAlt/></span>
+            </span>
+             
         </button>
     )
 }

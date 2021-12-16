@@ -10,6 +10,7 @@
     color: var(--light-dark-text);
     margin: 0;
     margin-bottom: 0.6em;
+    width: 10vw;
 }
 
 .homepage-subtext{
@@ -71,4 +72,13 @@
 
 #know-more:hover{
     cursor: pointer;
+}
+
+div.homepage-img-container-mob{
+    display: none;
+}
+
+.my-img-mob{
+    height: 42vh;
+    object-fit: contain;
 }

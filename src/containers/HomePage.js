@@ -12,6 +12,7 @@ import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CustomButton from "../components/CustomButton";
 import radha from "../static/images/radha.png";
+import radha_mob from "../static/images/mobile.png";
 import radhanobg from "../static/images/radha-nobg.png";
 import { Facebook } from "@material-ui/icons";
 import { Instagram } from "@material-ui/icons";
@@ -28,7 +29,7 @@ const HomePage = () => {
             <Navbar/>
             <div className='homepage-container'>
                 <div className='homepage-header'>
-                    <p className='my-name'>RADHA <br></br> JAYARAMAN</p>
+                    <p className='my-name'>RADHA JAYARAMAN</p>
                     <p className='homepage-subtext'>an aspiring <span className='software-text'>software developer</span> <br></br> with a bit of <span className='design-text'>design</span> sense.</p>
 
                     <div className='homepage-social-media'>
@@ -37,15 +38,20 @@ const HomePage = () => {
                         <a href={GITHUB_URL}><GitHub style={color_style}/></a>
                         <a href={LINKEDIN_URL}><LinkedIn style={color_style}/></a>
                     </div>
-                    <Link to={URLS.ABOUT_ME} className='remove-underline'>
-                        <CustomButton text='KNOW MORE' color='red'/>
-                    </Link>
+                    <div className="know-more-homepage">
+                        <Link to={URLS.ABOUT_ME} className='remove-underline' id='know-more'>
+                            <CustomButton text='KNOW MORE' color='red'/>
+                        </Link>
+                    </div>
                     <div className='footer-div-homepage'>
                         <Footer/>
                     </div>
                 </div>
                 <div className='homepage-img-container'>
                     <img src={radhanobg} alt='radha-img' className='my-img'/>
+                </div>
+                <div className='homepage-img-container-mob'>
+                    <img src={radha_mob} alt='radha-img' className='my-img-mob'/>
                 </div>
             </div>
         </div>
