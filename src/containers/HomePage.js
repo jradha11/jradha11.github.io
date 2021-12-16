@@ -3,7 +3,9 @@ import { Link } from "react-router-dom";
 
 /* css imports */
 import "../static/styles/containers/HomePage.css";
-import "../static/styles/CommonCss.css"
+import "../static/styles/CommonCss.css";
+import "../static/styles/MediaQueries.css";
+
 
 /*local imports*/
 import Navbar from "../components/Navbar";
@@ -46,10 +48,6 @@ const HomePage = () => {
                     <img src={radhanobg} alt='radha-img' className='my-img'/>
                 </div>
             </div>
-            {/* add background css later */}
-            {/* <div className='trapezoid'>
-
-            </div> */}
         </div>
     )
 }

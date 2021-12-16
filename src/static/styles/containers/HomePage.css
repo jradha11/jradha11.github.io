@@ -1,7 +1,7 @@
 .homepage-container{
     position: absolute;
     top: 8vh;
-    height: 92vh;
+    min-height: 92vh;
 }
 .my-name{
     font-size: 64px;
