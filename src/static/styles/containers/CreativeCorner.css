@@ -21,3 +21,16 @@
 .view-more{
     color: var(--light-secondary-blue);
 }
+
+#mobCreative{
+    display: none;
+}
+
+#webCreative{
+    display: block;
+}
+
+.mob-postcard{
+    width: 100%;
+    object-fit: contain;
+}

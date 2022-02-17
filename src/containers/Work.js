@@ -2,7 +2,8 @@ import React from "react";
 
 /* css imports */
 import "../static/styles/containers/Work.css"
-import "../static/styles/CommonCss.css"
+import "../static/styles/CommonCss.css";
+import "../static/styles/MediaQueries.css";
 
 /* local imports */
 import Header from "../components/Header";
@@ -33,7 +34,7 @@ const Work = () => {
                                 <p className='card-heading bold-blue-text'>{work.heading}</p>
                                 <p className='card-subheading'>{work.subheading}</p>
                                 <p className='card-content'>{work.content}</p>
-                                <button class='action-btn' href={work.btn_link}>KNOW MORE</button>
+                                <a className='action-btn' href={work.btn_link}>KNOW MORE</a>
                             </div>
                         </div>
                     );

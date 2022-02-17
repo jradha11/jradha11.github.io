@@ -130,6 +130,23 @@
         margin-bottom: 2em
     }
 
+    /* work */
+    div.work-card{
+        flex-direction: column;
+    }
+
+    p.card-content{
+        margin-bottom: 2em;
+    }
+
+    #webCreative{
+        display: none;
+    }
+
+    #mobCreative{
+        display: block;
+    }
+
 }
 
 /* phone */
@@ -314,6 +331,32 @@
 
     body .button{
         font-size: 14px;        
+    }
+
+    /* work */
+    div.work-card{
+        flex-direction: column;
+        padding: 0;
+    }
+
+    div.card-data{
+        padding: 1.2em;
+    }
+
+    p.card-content{
+        margin-bottom: 2em;
+    }
+
+    a.action-btn{
+        margin-bottom: 2em;
+    }
+
+    div#webCreative{
+        display: none;
+    }
+
+    div#mobCreative{
+        display: block;
     }
 
 

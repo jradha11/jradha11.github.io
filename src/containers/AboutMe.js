@@ -16,7 +16,6 @@ import Footer from "../components/Footer";
 import * as URLS from "../utils/AppUrls";
 
 /* img imports */
-import p1 from "../static/images/postcards/postcard1.jpg"
 
 const AboutMe = () => {
     const header_data = PAGE_HEADING['ABOUT_ME']
@@ -56,10 +55,10 @@ const AboutMe = () => {
                         </Link>
                     </div>
                     <div className='postcards-container'>
-                        <img alt='img-1' src={p1} className='postcards'/>
-                        <img alt='img-1' src={p1} className='postcards'/>
-                        <img alt='img-1' src={p1} className='postcards'/>
-                        <img alt='img-1' src={p1} className='postcards'/>
+                        <img alt='img-1'  className='postcards'/>
+                        <img alt='img-1'  className='postcards'/>
+                        <img alt='img-1'  className='postcards'/>
+                        <img alt='img-1'  className='postcards'/>
                     </div>
                 </div>
             </div>

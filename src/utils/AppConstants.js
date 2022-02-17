@@ -26,15 +26,15 @@ export const PAGE_HEADING = {
 
 export const WORK_DATA = [
     {
-        "heading": "heading",
-        "subheading": "subheading",
-        "content": "content",
-        "btn-link": "www.google.co.in"
+        "heading": "Inter IIT Tech Meet Branding",
+        "subheading": "Design Studio, IIT Roorkee | 2019",
+        "content": "Spearheaded a 3-member team that formulated a brand identity for Inter IIT Tech Meet. Designed user-centric website, created graphic deliverables to enhance the brand value.",
+        "btn-link": "https://www.behance.net/gallery/94358603/Inter-IIT-Tech-Meet-2019-Branding"
     },
     {
-        "heading": "heading",
-        "subheading": "subheading",
-        "content": "content",
-        "btn_link": "www.google.co.in"
+        "heading": "Onboarding Portal",
+        "subheading": "Explorin | 2021",
+        "content": "Examined the existing onboarding process and conceptualized a simplified user experience. Automated the process by developing a web application with distinct frontend and backend.Developed Django REST APIs, and built services like interview scheduling, test evaluation.Identified user interactions and built a highly responsive frontend architecture on ReactJS.",
+        "btn_link": "https://explorin.io"
     }
 ]
