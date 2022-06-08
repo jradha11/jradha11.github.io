@@ -351,13 +351,5 @@
         margin-bottom: 2em;
     }
 
-    div#webCreative{
-        display: none;
-    }
-
-    div#mobCreative{
-        display: block;
-    }
-
 
 }

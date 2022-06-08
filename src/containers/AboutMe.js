@@ -15,10 +15,16 @@ import { INSTAGRAM_URL } from "../utils/AppConstants";
 import Footer from "../components/Footer";
 import * as URLS from "../utils/AppUrls";
 
+import i1 from "../static/images/acrylics/i1.jpg";
+import i2 from "../static/images/acrylics/i2.jpg";
+import i3 from "../static/images/acrylics/i3.jpg";
+import i4 from "../static/images/acrylics/i4.jpg";
+
 /* img imports */
 
 const AboutMe = () => {
-    const header_data = PAGE_HEADING['ABOUT_ME']
+    const header_data = PAGE_HEADING['ABOUT_ME'];
+
     return(
         <div>
             <Navbar/>
@@ -26,19 +32,23 @@ const AboutMe = () => {
             <div className='page-content-container'>
                 <p className='bold-blue-text primary-text-font'> Hi there!! I’m Radha. </p>
                 <p className='light-theme-content primary-text-font'>
-                    I am a final year undergraduate student at IIT Roorkee persuing my bachelors in Chemical Engineering. 
-                    I am a tamilian, born and brought up in Delhi. During the first three years of my college life I’ve explored the Design, Data Science and Web Development. 
-                    I have also contributed to  open-source softwares by contributing to the java bindings of <a href='https://github.com/OpenTimelineIO/OpenTimelineIO-Java-Bindings' target='__blank' className='anchor-tag-link'>OpenTimelineIo</a>, an API interchange format lead by Pixar Animated Studios.
+                    I graduated from IIT Roorkee in May 2022 with a bachelors degree in Chemical Engineering. I am a tamilian, born and brought up in Delhi. 
+                    Because of my belief in exploration, during my college life I’ve explored the field of Design, Data Science, Web Development and little bit of Open Source Development.  
+                    I have contributed to the java bindings of <a href='https://github.com/OpenTimelineIO/OpenTimelineIO-Java-Bindings' target='__blank' className='anchor-tag-link'>OpenTimelineIo</a>, an API interchange format lead by Pixar Animated Studios.
+                    In my prefinal and final year, I contributed significantly to a B2C startup <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a>, that helps freshers and sophomores from engineering colleges to find their career passion. 
+                    At Explorin, I majorly worked in the software Development area, but also gained significant insights about product management and consumer needs.
                 </p>
                 <p className='light-theme-content primary-text-font'>
-                    Currently, I am working as a Software Developer in a B2C startup called <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a>, 
-                    that helps freshers and sophomores from engineering colleges to find their career passion.
+                    This year I will be joining JPMorgan Chase & Co as a full time Software Engineer.
                 </p>
                 <p className='bold-blue-text primary-text-font'> All work and no play makes Jack a dull boy :( </p>
                 <p className='light-theme-content primary-text-font'>
                     When I am not working you’ll mostly find me strumming my guitar and singing some songs, <br/>
                     or painting with acrylics, <br/>
                     or simply standing out in the balcony and admiring the vastness of sky.
+                    <br></br>
+                    <br></br>
+                    Also, I am beach person. Hehehe.
                 </p>
                 <br/>
                 <br/>
@@ -55,10 +65,10 @@ const AboutMe = () => {
                         </Link>
                     </div>
                     <div className='postcards-container'>
-                        <img alt='img-1'  className='postcards'/>
-                        <img alt='img-1'  className='postcards'/>
-                        <img alt='img-1'  className='postcards'/>
-                        <img alt='img-1'  className='postcards'/>
+                        <img alt='img-1'  src={i1} className='postcards'/>
+                        <img alt='img-2'  src={i2} className='postcards'/>
+                        <img alt='img-3'  src={i3} className='postcards'/>
+                        <img alt='img-4'  src={i4} className='postcards'/>
                     </div>
                 </div>
             </div>

@@ -37,58 +37,10 @@ const CreativeCorner = () => {
                         })}
                     </div>
                 </div>
-               
-                <div id="mobCreative">
-                    <Carousel>
-                        <Carousel.Item>
-                                <img
-                                className="d-block mob-postcard"
-                                src={i1}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                                <img
-                                className="d-block mob-postcard"
-                                src={i2}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                                <img
-                                className="d-block mob-postcard"
-                                src={i3}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                                <img
-                                className="d-block mob-postcard"
-                                src={i4}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                                <img
-                                className="d-block mob-postcard"
-                                src={i5}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                        <Carousel.Item>
-                                <img
-                                className="d-block mob-postcard"
-                                src={i6}
-                                alt="First slide"
-                            />
-                        </Carousel.Item>
-                    </Carousel>
-                    
+                <div className='view-more-container'>
+                    <p className='bold-blue-text'>Liked what you saw? Checkout my insta profile to find some more!</p>
+                    <a className='view-more' href={INSTAGRAM_URL} target='__blank'>view more</a>
                 </div>
-            </div>
-            <div className='view-more-container'>
-                <p className='bold-blue-text'>Liked what you saw? Checkout my insta profile to find some more!</p>
-                <a className='view-more' href={INSTAGRAM_URL} target='__blank'>view more</a>
             </div>
             <Footer/>
         </div>
