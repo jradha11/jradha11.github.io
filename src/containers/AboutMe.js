@@ -39,7 +39,7 @@ const AboutMe = () => {
                     At Explorin, I majorly worked in the software Development area, but also gained significant insights about product management and consumer needs.
                 </p>
                 <p className='light-theme-content primary-text-font'>
-                    This year I will be joining JPMorgan Chase & Co as a full time Software Engineer.
+                    This year I will be joining <b>JPMorgan Chase & Co</b> as a full time Software Engineer.
                 </p>
                 <p className='bold-blue-text primary-text-font'> All work and no play makes Jack a dull boy :( </p>
                 <p className='light-theme-content primary-text-font'>
@@ -48,16 +48,16 @@ const AboutMe = () => {
                     or simply standing out in the balcony and admiring the vastness of sky.
                     <br></br>
                     <br></br>
-                    Also, I am beach person. Hehehe.
+                    Also, I am beach person. 
                 </p>
                 <br/>
                 <br/>
 
                 {/* creative corner content */}
                 <div className='creative-corner-container'>
-                    <p className='section-heading bold-blue-text'>my creative corner</p>
+                    <p className='section-heading bold-blue-text'>creative corner</p>
                     <div className='subheading-container'>
-                        <p className='section-subheading primary-text-font'>Few of tiny postcards I made using acrylics on 300gsm sheets.</p>
+                        <p className='section-subheading primary-text-font'>few of tiny postcards I made using acrylics on 300gsm sheets.</p>
                         <Link to={URLS.CREATIVE_CORNER}>
                             <div className="view-more-link">
                                 view more
