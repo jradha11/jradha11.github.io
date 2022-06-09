@@ -1,4 +1,6 @@
 import React from "react";
+import ReactHtmlParser from 'react-html-parser';
+
 
 /* css imports */
 import "../static/styles/containers/Work.css"
@@ -12,7 +14,6 @@ import { PAGE_HEADING } from "../utils/AppConstants";
 import { WORK_DATA } from "../utils/AppConstants";
 
 /* img imports */
-import w1 from "../static/images/work/w1.png"
 import Footer from "../components/Footer";
 
 
@@ -25,16 +26,20 @@ const Work = () => {
             <Header header_data={header_data}/>
             <div className='page-content-container'>
                 {WORK_DATA.map((work) => {
+                    const hasBtn = work.btn_link ? true : false;
+                    const img_src = require("../static/images/work/" + work.img_src + ".png").default
                     return(
                         <div className='work-card'>
-                            <div className='card-img-container'>
-                                <img src={w1}/>
-                            </div>
                             <div className='card-data'>
-                                <p className='card-heading bold-blue-text'>{work.heading}</p>
-                                <p className='card-subheading'>{work.subheading}</p>
-                                <p className='card-content'>{work.content}</p>
-                                <a className='action-btn' href={work.btn_link}>KNOW MORE</a>
+                                <div className='card-img-container'>
+                                    <img src={img_src} alt='card-img' className='card-img'/>
+                                    <div>
+                                        <p className='card-heading bold-blue-text'>{work.heading}</p>
+                                        <p className='card-subheading'>{work.subheading}</p>
+                                    </div>
+                                </div>
+                                <p className='card-content'>{ReactHtmlParser(work.content)}</p>
+                                {hasBtn ? <a className='action-btn' href={work.btn_link}>know more</a> : null}
                             </div>
                         </div>
                     );
