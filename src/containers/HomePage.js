@@ -11,14 +11,14 @@ import "../static/styles/MediaQueries.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CustomButton from "../components/CustomButton";
-import radha from "../static/images/radha.png";
+import behance from "../static/images/behance.png";
 import radha_mob from "../static/images/mobile.png";
 import radhanobg from "../static/images/radha-nobg.png";
 import { Facebook } from "@material-ui/icons";
 import { Instagram } from "@material-ui/icons";
 import { GitHub } from "@material-ui/icons";
 import { LinkedIn } from "@material-ui/icons";
-import {FACEBOOK_URL, GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL} from "../utils/AppConstants";
+import {FACEBOOK_URL, GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL, BEHANCE_URL} from "../utils/AppConstants";
 import * as URLS from "../utils/AppUrls"
 
 
@@ -33,10 +33,11 @@ const HomePage = () => {
                     <p className='homepage-subtext'>an aspiring <span className='software-text'>software developer</span> <br></br> with a bit of <span className='design-text'>design</span> sense.</p>
 
                     <div className='homepage-social-media'>
-                        <a href={FACEBOOK_URL}><Facebook style={color_style}/></a>
-                        <a href={INSTAGRAM_URL}><Instagram style={color_style}/></a>
-                        <a href={GITHUB_URL}><GitHub style={color_style}/></a>
-                        <a href={LINKEDIN_URL}><LinkedIn style={color_style}/></a>
+                        <a href={GITHUB_URL} target="__blank"><GitHub style={color_style}/></a>
+                        <a href={LINKEDIN_URL} target="__blank"><LinkedIn style={color_style}/></a>
+                        <a href={FACEBOOK_URL} target="__blank"><Facebook style={color_style}/></a>
+                        <a href={INSTAGRAM_URL} target="__blank"><Instagram style={color_style}/></a>
+                        <a href={BEHANCE_URL} target="__blank"><img src={behance} alt='behance-img'/></a>
                     </div>
                     <div className="know-more-homepage">
                         <Link to={URLS.ABOUT_ME} className='remove-underline' id='know-more'>
