@@ -9,9 +9,10 @@ import "../static/styles/MediaQueries.css";
 /* local imports */
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
-import { PAGE_HEADING } from "../utils/AppConstants";
+import { BEHANCE_URL, PAGE_HEADING } from "../utils/AppConstants";
 import Footer from "../components/Footer";
-import img from "../static/images/contact-me.png"
+import img from "../static/images/contact-me.png";
+import behance from "../static/images/behance.png";
 import { Facebook } from "@material-ui/icons";
 import { Mail } from "@material-ui/icons";
 import { Instagram } from "@material-ui/icons";
@@ -56,18 +57,22 @@ const ContactMe = () => {
                             <a href={mail_to} className='icon-wrapper' target='__blank'><Mail style={color_style} fontSize={font_size}/>{EMAIL_ADD}</a>
                             <br/>
                             <div className='other-social-wrapper'>
-                                <a href={FACEBOOK_URL} className='icon-wrapper' target='__blank'>
-                                    <Facebook style={color_style} fontSize={font_size}/> facebook
-                                </a>
-                                <a href={INSTAGRAM_URL} className='icon-wrapper' target='__blank'>
-                                    <Instagram style={color_style} fontSize={font_size}/> instagram
-                                </a>
                                 <a href={LINKEDIN_URL} className='icon-wrapper' target='__blank'>
-                                    <LinkedIn style={color_style} fontSize={font_size}/> linkedin
+                                    <LinkedIn style={color_style} fontSize={font_size}/> 
                                 </a>
                                 <a href={GITHUB_URL} className='icon-wrapper' target='__blank'>
-                                    <GitHub style={color_style} fontSize={font_size}/> github
+                                    <GitHub style={color_style} fontSize={font_size}/> 
                                 </a>
+                                <a href={FACEBOOK_URL} className='icon-wrapper' target='__blank'>
+                                    <Facebook style={color_style} fontSize={font_size}/> 
+                                </a>
+                                <a href={INSTAGRAM_URL} className='icon-wrapper' target='__blank'>
+                                    <Instagram style={color_style} fontSize={font_size}/> 
+                                </a>
+                                <a href={BEHANCE_URL} className='icon-wrapper' target='__blank'>
+                                    <img src={behance} alt='behance-img'/>
+                                </a>
+                                
                             </div>
                         </div>
                     </div>
