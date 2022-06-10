@@ -52,3 +52,18 @@ export const WORK_DATA = [
     },
 
 ]
+
+export const BLOG_DATA = [
+    {
+        "heading": "Canteen HUB | Food Ordering system at IIT Roorkee",
+        "subheading": "UI/UX Case Study",
+        "link": "https://radhajayaraman11.medium.com/canteen-hub-37cde226fa18",
+        "img_src": "canteen"
+    },
+    {
+        "heading": "Feature Selection Using Genetic Algorithm in Python",
+        "subheading": "Data Science Blog",
+        "link": "https://medium.com/@radhajayaraman11/feature-selection-using-genetic-algorithm-2f915d1349b0",
+        "img_src": "data"
+    }
+]
