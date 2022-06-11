@@ -232,6 +232,12 @@
         font-size: 20px;
     }
 
+    p.section-subheading{
+        font-size: 16px;
+    }
+    div.view-more-link{
+        float: right;
+    }
     .subheading-container{
         flex-direction: column;
     }
@@ -241,6 +247,28 @@
         width: 100%;
         align-content: center;
     }
+
+    img.postcards{
+        max-width: 100%;
+    }
+
+    a#view-more-postcard-web{
+        display: none;
+    }
+
+    a#view-more-postcard-mobile{
+        display: block;
+        font-size: 16px;
+        color: var(--light-secondary-blue);
+        margin-top: 1em;
+        text-align: center;
+    }
+
+    a#view-more-postcard-mobile:visited{
+        color: var(--light-secondary-blue);
+    }
+
+    
 
     /* contact us */
     .contact-me-wrapper{

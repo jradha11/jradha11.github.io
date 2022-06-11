@@ -57,7 +57,7 @@ body{
 
 @media screen and (max-width: 40em) {
     .page-content-container{
-        padding: 10vh 10vw;
+        padding: 4vh 8vw;
         padding-bottom: 0;
     }
 }

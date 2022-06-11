@@ -20,9 +20,17 @@
 }
 
 .postcards{
-    width: 272px;
+    max-width: 256px;
     object-fit: contain;
     margin-top: 16px;
+}
+
+#view-more-postcard-mobile{
+    display: none;
+}
+
+#view-more-postcard-web{
+    display: block;
 }
 
 .postcards-container{

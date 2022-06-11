@@ -58,7 +58,7 @@ const AboutMe = () => {
                     <p className='section-heading bold-blue-text'>creative corner</p>
                     <div className='subheading-container'>
                         <p className='section-subheading primary-text-font'>few of tiny postcards I made using acrylics on 300gsm sheets.</p>
-                        <Link to={URLS.CREATIVE_CORNER}>
+                        <Link to={URLS.CREATIVE_CORNER} id='view-more-postcard-web'>
                             <div className="view-more-link">
                                 view more
                             </div>
@@ -69,7 +69,11 @@ const AboutMe = () => {
                         <img alt='img-2'  src={i2} className='postcards'/>
                         <img alt='img-3'  src={i3} className='postcards'/>
                         <img alt='img-4'  src={i4} className='postcards'/>
+                        <Link to={URLS.CREATIVE_CORNER} id='view-more-postcard-mobile'>
+                            view more
+                        </Link>
                     </div>
+                   
                 </div>
             </div>
             <Footer/>
