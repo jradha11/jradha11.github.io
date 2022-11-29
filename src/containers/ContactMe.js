@@ -1,4 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
+import emailjs from '@emailjs/browser';
 /* css imports */
 import "../static/styles/containers/ContactMe.css";
 import "../static/styles/CommonCss.css";
@@ -21,7 +22,27 @@ const ContactMe = () => {
     const color_style = {color: '#777777', marginRight: '16px'};
     const font_size = 'small';
     const mail_to = "https://mail.google.com/mail/?view=cm&fs=1&to="+EMAIL_ADD;
-    console.log(mail_to)
+    const [who, setWho] = useState("");
+    const [email, setEmail] = useState("");
+    const [message, setMessage] = useState("");
+
+    function useEmailAPI(){
+        emailjs.send(
+            process.env.REACT_APP_MY_SERVICE_ID, 
+            process.env.REACT_APP_MY_TEMPLATE_ID, 
+            {
+                "name": who, 
+                "email": email,
+                "message": message
+            }, 
+            process.env.REACT_APP_MY_PUBLIC_KEY).then((result) => {
+                console.log(result.text);
+                console.log("success");
+            }, (error) => {
+                console.log(error.text);
+            });
+        };
+
     return(
         <div>
             <Navbar/>
@@ -34,6 +55,18 @@ const ContactMe = () => {
                             id="outlined-basic" 
                             label="Name" variant="outlined" 
                             style={{width: '100%'}}
+                            value={who}
+                            onChange={e => setWho(e.target.value)}
+                        />
+                        <br/>
+                        <br/>
+                        <TextField 
+                            id="outlined-basic" 
+                            label="Email Address" 
+                            variant="outlined" 
+                            style={{width: '100%'}}
+                            value={email}
+                            onChange={e => setEmail(e.target.value)}
                         />
                         <br/>
                         <br/>
@@ -44,9 +77,12 @@ const ContactMe = () => {
                             multiline
                             rows={6}
                             style={{width: '100%'}}
+                            value={message}
+                            onChange={e => setMessage(e.target.value)}
                         />
+                        
                         <br/>
-                        <button className='send-btn'>
+                        <button className='send-btn' onClick={useEmailAPI}>
                             SEND
                         </button>
                         <div className='contact-social-wrapper'>
