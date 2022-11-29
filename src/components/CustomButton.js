@@ -1,5 +1,5 @@
 import React from "react";
-import { ArrowRightAlt } from "@material-ui/icons";
+import { ArrowRightAlt } from "@mui/icons-material";
 import "../static/styles/CommonCss.css";
 import "../static/styles/components/CustomButton.css";
 

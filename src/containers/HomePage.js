@@ -14,12 +14,9 @@ import CustomButton from "../components/CustomButton";
 import behance from "../static/images/behance.png";
 import radha_mob from "../static/images/mobile.png";
 import radhanobg from "../static/images/radha-nobg.png";
-import { Facebook } from "@material-ui/icons";
-import { Instagram } from "@material-ui/icons";
-import { GitHub } from "@material-ui/icons";
-import { LinkedIn } from "@material-ui/icons";
+import {Facebook, Instagram, GitHub, LinkedIn} from "@mui/icons-material";
 import {FACEBOOK_URL, GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL, BEHANCE_URL} from "../utils/AppConstants";
-import * as URLS from "../utils/AppUrls"
+import * as URLS from "../utils/AppUrls";
 
 
 const HomePage = () => {

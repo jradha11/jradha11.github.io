@@ -1,5 +1,4 @@
 import React from "react";
-import { TextField } from "@mui/material";
 /* css imports */
 import "../static/styles/containers/ContactMe.css";
 import "../static/styles/CommonCss.css";
@@ -13,11 +12,8 @@ import { BEHANCE_URL, PAGE_HEADING } from "../utils/AppConstants";
 import Footer from "../components/Footer";
 import img from "../static/images/contact-me.png";
 import behance from "../static/images/behance.png";
-import { Facebook } from "@material-ui/icons";
-import { Mail } from "@material-ui/icons";
-import { Instagram } from "@material-ui/icons";
-import { GitHub } from "@material-ui/icons";
-import { LinkedIn } from "@material-ui/icons";
+import { Facebook, Mail, Instagram,GitHub, LinkedIn } from "@mui/icons-material";
+import { TextField } from '@mui/material'
 import { FACEBOOK_URL, INSTAGRAM_URL, EMAIL_ADD, GITHUB_URL, LINKEDIN_URL } from "../utils/AppConstants";
 
 const ContactMe = () => {

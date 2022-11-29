@@ -1,5 +1,5 @@
 import React from "react";
-import ReactHtmlParser from 'react-html-parser';
+import parse from 'html-react-parser';
 
 
 /* css imports */
@@ -39,7 +39,7 @@ const Work = () => {
                                             <p className='card-subheading'>{work.subheading}</p>
                                         </div>
                                     </div>
-                                    <p className='card-content'>{ReactHtmlParser(work.content)}</p>
+                                    <p className='card-content'>{parse(work.content)}</p>
                                     {hasBtn ? <a className='action-btn' href={work.btn_link} target="__blank">know more</a> : null}
                                 </div>
                             </div>
