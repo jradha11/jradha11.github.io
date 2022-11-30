@@ -29,13 +29,13 @@ const HomePage = () => {
                     <p className='my-name'>RADHA JAYARAMAN</p>
                     <p className='homepage-subtext'>a <span className='software-text'>software developer</span> by day, <br></br><span className='design-text'>artist</span> by night.</p>
 
-                    <div className='homepage-social-media'>
+                    {/* <div className='homepage-social-media'>
                         <a href={GITHUB_URL} target="__blank"><GitHub style={color_style}/></a>
                         <a href={LINKEDIN_URL} target="__blank"><LinkedIn style={color_style}/></a>
                         <a href={FACEBOOK_URL} target="__blank"><Facebook style={color_style}/></a>
                         <a href={INSTAGRAM_URL} target="__blank"><Instagram style={color_style}/></a>
                         <a href={BEHANCE_URL} target="__blank"><img src={behance} alt='behance-img'/></a>
-                    </div>
+                    </div> */}
                     <div className="know-more-homepage">
                         <Link to={URLS.ABOUT_ME} className='remove-underline' id='know-more'>
                             <CustomButton text='KNOW MORE' color='red'/>
