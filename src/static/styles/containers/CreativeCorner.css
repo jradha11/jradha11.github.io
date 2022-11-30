@@ -5,8 +5,8 @@
 }
 
 .creative-postcard{
-    width: 312px;
-    min-width: 196px;
+    width: 15em;
+    min-width: 14em;
     object-fit: contain;
     margin-top: 16px;
     margin-bottom: 48px;
