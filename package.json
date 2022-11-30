@@ -27,7 +27,7 @@
   },
   "scripts": {
     "start": "react-scripts start",
-    "build": "react-scripts build",
+    "build": "react-scripts build && shx cp build/index.html build/404.html",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
     "predeploy": "npm run build",
@@ -53,6 +53,7 @@
   },
   "devDependencies": {
     "gh-pages": "^4.0.0",
-    "react-error-overlay": "^6.0.9"
+    "react-error-overlay": "^6.0.9",
+    "shx": "^0.3.4"
   }
 }
