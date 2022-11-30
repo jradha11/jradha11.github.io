@@ -14,6 +14,7 @@ import Footer from "../components/Footer";
 import img from "../static/images/contact-me.png";
 import behance from "../static/images/behance.png";
 import { Facebook, Mail, Instagram,GitHub, LinkedIn } from "@mui/icons-material";
+import {Alert} from "@mui/material";
 import { TextField } from '@mui/material'
 import { FACEBOOK_URL, INSTAGRAM_URL, EMAIL_ADD, GITHUB_URL, LINKEDIN_URL } from "../utils/AppConstants";
 
@@ -25,21 +26,40 @@ const ContactMe = () => {
     const [who, setWho] = useState("");
     const [email, setEmail] = useState("");
     const [message, setMessage] = useState("");
+    const [showSuccess, setShowSuccess] = useState(true);
+    const [showError, setShowError] = useState(false);
+
 
     function useEmailAPI(){
-        emailjs.send(
-            process.env.REACT_APP_MY_SERVICE_ID, 
-            process.env.REACT_APP_MY_TEMPLATE_ID, 
-            {
-                "name": who, 
-                "email": email,
-                "message": message
-            }, 
-            process.env.REACT_APP_MY_PUBLIC_KEY).then((result) => {
-                console.log("success");
-            }, (error) => {
-                console.log(error.text);
-            });
+        if(email.length==0){
+            console.log("email empty");
+            alert("I think you forgot to mention your email!");
+        }
+        if(who.length == 0){
+            console.log("name empty");
+            alert("I'd love to know your name :)");
+        }
+        if(message.length == 0){
+            alert("Oops! The message is empty! :)");
+        }
+        else{
+            emailjs.send(
+                process.env.REACT_APP_MY_SERVICE_ID, 
+                process.env.REACT_APP_MY_TEMPLATE_ID, 
+                {
+                    "name": who, 
+                    "email": email,
+                    "message": message
+                }, 
+                process.env.REACT_APP_MY_PUBLIC_KEY).then((result) => {
+                    console.log("success");
+                    alert("Appreciate you for taking out time to reach out to me. I'll respond back at the earliest!");
+                }, (error) => {
+                    console.log(error.text);
+                    alert("Oops! I think something went wrong while sending the message. So, lets connect on LinkedIn?");
+                });
+                return;
+        }
         };
 
     return(
@@ -136,6 +156,14 @@ const ContactMe = () => {
                         </button>
                     </div>
                 </div>
+                {/* {showSuccess?
+                        <Alert severity="success" onClose={() => {setShowSuccess(false)}}>
+                            Appreciate you for taking out time to reach out to me. 
+                            I'll respond back at the earliest!
+                        </Alert> 
+                    : null}
+                    {showError?<Alert severity="error" onClose={() => {setShowError(false)}}>Oops! I think something went wrong while sending the email. So, lets connect on LinkedIn?</Alert>:null} */}
+
 
                 {/* <div className='contact-me-img-div'>
                     <img  src={img} alt="contact-me" className='contact-me-img'/>
