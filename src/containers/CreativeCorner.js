@@ -1,5 +1,4 @@
 import React from "react";
-import Carousel from 'react-bootstrap/Carousel'
 
 /* css imports */
 import "../static/styles/containers/CreativeCorner.css"

@@ -11,14 +11,12 @@ import "../static/styles/MediaQueries.css"
 import Header from "../components/Header";
 import Navbar from "../components/Navbar";
 import { PAGE_HEADING } from "../utils/AppConstants";
-import { INSTAGRAM_URL } from "../utils/AppConstants";
 import Footer from "../components/Footer";
 import * as URLS from "../utils/AppUrls";
 
 import i1 from "../static/images/acrylics/i1.jpg";
 import i2 from "../static/images/acrylics/i2.jpg";
 import i3 from "../static/images/acrylics/i3.jpg";
-import i4 from "../static/images/acrylics/i4.jpg";
 
 /* img imports */
 

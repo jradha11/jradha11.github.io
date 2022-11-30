@@ -11,16 +11,12 @@ import "../static/styles/MediaQueries.css";
 import Navbar from "../components/Navbar";
 import Footer from "../components/Footer";
 import CustomButton from "../components/CustomButton";
-import behance from "../static/images/behance.png";
 import radha_mob from "../static/images/mobile.png";
 import radhanobg from "../static/images/radha-nobg.png";
-import {Facebook, Instagram, GitHub, LinkedIn} from "@mui/icons-material";
-import {FACEBOOK_URL, GITHUB_URL, LINKEDIN_URL, INSTAGRAM_URL, BEHANCE_URL} from "../utils/AppConstants";
 import * as URLS from "../utils/AppUrls";
 
 
 const HomePage = () => {
-    const color_style = {color: "#777777"}
     return(
         <div>
             <Navbar/>
