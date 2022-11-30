@@ -268,11 +268,27 @@
         color: var(--light-secondary-blue);
     }
 
+    p.primary-text-font{
+        font-size: 0.9em;
+    }
+
+    div.header-container{
+        height: 35vh;
+    }
+
     
 
     /* contact us */
     .contact-me-wrapper{
-        flex-direction: column-reverse;
+        flex-direction: column;
+    }
+
+    div.other-social-wrapper{
+        width: 100%;
+    }
+
+    div.contact-me-icon-div{
+        margin-bottom: 0;
     }
 
     .contact-me-img{
@@ -301,11 +317,6 @@
 
     div.contact-social-wrapper{
         font-size: 16px;
-    }
-
-    a.icon-wrapper{
-        align-self: unset;
-        margin-bottom: 0.75em;
     }
 
     /* homepage */
@@ -386,6 +397,18 @@
 
     p.blog-subheading{
         font-size: 14px;
+    }
+
+    p.card-heading{
+        font-size: 1em;
+    }
+
+    p.card-subheading{
+        font-size: 0.8em;
+    }
+
+    p.card-content{
+        font-size: 0.8em;
     }
 
 
