@@ -27,7 +27,7 @@ const HomePage = () => {
             <div className='homepage-container'>
                 <div className='homepage-header'>
                     <p className='my-name'>RADHA JAYARAMAN</p>
-                    <p className='homepage-subtext'>an aspiring <span className='software-text'>software developer</span> <br></br> with a bit of <span className='design-text'>design</span> sense.</p>
+                    <p className='homepage-subtext'>a <span className='software-text'>software developer</span> by day, <br></br><span className='design-text'>artist</span> by night.</p>
 
                     <div className='homepage-social-media'>
                         <a href={GITHUB_URL} target="__blank"><GitHub style={color_style}/></a>

@@ -7,7 +7,7 @@ const CustomButton = (props) => {
     return(
         <button className='button'>
             <span style={{display: 'flex', alignItems: 'center'}}>
-                {props.text} <span style={{marginLeft: '16px', alignItems: 'center', display: 'flex'}}><ArrowRightAlt/></span>
+                {props.text} <span style={{marginLeft: '1em', alignItems: 'center', display: 'flex'}}><ArrowRightAlt/></span>
             </span>
              
         </button>

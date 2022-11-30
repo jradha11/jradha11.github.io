@@ -4,7 +4,7 @@
     min-height: 92vh;
 }
 .my-name{
-    font-size: 64px;
+    font-size: 3em;
     font-weight: bold;
     letter-spacing: 0.08em;
     color: var(--light-dark-text);
@@ -15,17 +15,19 @@
 
 .homepage-subtext{
     color: var(--light-primary-text);
-    font-size: 24px;
+    font-size: 1.2em;
     margin: 0;
 }
 
 .software-text{
     font-family: 'Courier Prime';
     font-weight: bold;
+    font-size: 1em;
 }
 
 .design-text{
     font-family: 'Sarina';
+    font-size: 1em;
 }
 
 .homepage-container{
@@ -79,6 +81,7 @@ div.homepage-img-container-mob{
 }
 
 .my-img-mob{
-    height: 42vh;
+    margin-top: 2.5em;
+    height: 32vh;
     object-fit: contain;
 }

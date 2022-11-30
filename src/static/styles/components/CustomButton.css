@@ -3,7 +3,7 @@
     background-color: var(--light-secondary-blue);
     color: var(--light-primary-blue);
     align-items: center;
-    font-size: 24px;
+    font-size: 1em;
     letter-spacing: 0.08em;
     border-radius: 4px;
     outline: none;
