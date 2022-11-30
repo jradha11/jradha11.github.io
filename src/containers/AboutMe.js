@@ -30,21 +30,22 @@ const AboutMe = () => {
             <Navbar/>
             <Header header_data={header_data} />
             <div className='page-content-container'>
-                <p className='bold-blue-text primary-text-font'> Hi there!! I’m Radha. </p>
+                <p className='bold-blue-text primary-text-font'> Hi there 😊<br></br> I’m Radha. </p>
                 <p className='light-theme-content primary-text-font'>
-                    I graduated from IIT Roorkee in May 2022 with a bachelors degree in Chemical Engineering. I am a tamilian, born and brought up in Delhi. 
-                    Because of my belief in exploration, during my college life I’ve explored the field of Design, Data Science, Web Development and little bit of Open Source Development.  
-                    I have contributed to the java bindings of <a href='https://github.com/OpenTimelineIO/OpenTimelineIO-Java-Bindings' target='__blank' className='anchor-tag-link'>OpenTimelineIo</a>, an API interchange format lead by Pixar Animated Studios.
-                    In my prefinal and final year, I contributed significantly to a B2C startup <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a>, that helps freshers and sophomores from engineering colleges to find their career passion. 
-                    At Explorin, I majorly worked in the software Development area, but also gained significant insights about product management and consumer needs.
+                    I graduated from IIT Roorkee in May 2022 with a bachelors degree in Chemical Engineering. Tamilian by native, I have been born and brought up in Delhi. 
+                    Throughout the entirity of my college life I tried to explore as much as I could. Starting with design, diving into web development and machine learning, and eventually applied
+                    these skills by working in a B2C startup <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a>, for a good year and a half.   
+                    <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a> aims at making every college student financially independent, 
+                    by providing a holistic career exploration program inclusive of all the popular industry fields.                    
+                    I have also contributed to the java bindings of <a href='https://github.com/OpenTimelineIO/OpenTimelineIO-Java-Bindings' target='__blank' className='anchor-tag-link'>OpenTimelineIo</a>, an API interchange format lead by Pixar Animated Studios.
                 </p>
                 <p className='light-theme-content primary-text-font'>
-                    This year I will be joining <b>JPMorgan Chase & Co</b> as a full time Software Engineer.
+                    Currently, I am working as a Software Engineer at JP Morgan Chase & Co.
                 </p>
-                <p className='bold-blue-text primary-text-font'> All work and no play makes Jack a dull boy :( </p>
+                <p className='bold-blue-text primary-text-font'> All work and no play makes Jack a dull boy 😥 </p>
                 <p className='light-theme-content primary-text-font'>
-                    When I am not working you’ll mostly find me strumming my guitar and singing some songs, <br/>
-                    or painting with acrylics, <br/>
+                    When I am not working you’ll mostly find me painting (I love acrylics!), <br/>
+                    or strumming my guitar and humming some song, <br/>
                     or simply standing out in the balcony and admiring the vastness of sky.
                     <br></br>
                     <br></br>
@@ -68,7 +69,6 @@ const AboutMe = () => {
                         <img alt='img-1'  src={i1} className='postcards'/>
                         <img alt='img-2'  src={i2} className='postcards'/>
                         <img alt='img-3'  src={i3} className='postcards'/>
-                        <img alt='img-4'  src={i4} className='postcards'/>
                         <Link to={URLS.CREATIVE_CORNER} id='view-more-postcard-mobile'>
                             view more
                         </Link>
