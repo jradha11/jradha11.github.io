@@ -40,6 +40,7 @@ const AboutMe = () => {
                 <p className='light-theme-content primary-text-font'>
                     Currently, I am working as a Software Engineer at JP Morgan Chase & Co.
                 </p>
+                <br></br>
                 <p className='bold-blue-text primary-text-font'> All work and no play makes Jack a dull boy 😥 </p>
                 <p className='light-theme-content primary-text-font'>
                     When I am not working you’ll mostly find me painting (I love acrylics!), <br/>
