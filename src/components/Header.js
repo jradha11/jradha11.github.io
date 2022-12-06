@@ -6,7 +6,6 @@ import "../static/styles/CommonCss.css";
 import "../static/styles/MediaQueries.css";
 
 
-
 /* local imports */
 
 const Header = (props) => {

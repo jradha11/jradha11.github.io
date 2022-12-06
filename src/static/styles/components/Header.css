@@ -1,7 +1,7 @@
 .header-container{
-    background-color: var(--light-primary-blue);
+    background-color: var(--primary-blue);
     text-align: center;
-    height: 30vh;
+    height: 35vh;
     z-index: -1;
     display: flex;
     flex-direction: column;
@@ -11,12 +11,12 @@
 
 .header-heading{
     font-weight: bold;
-    color: var(--light-secondary-blue);
+    color: var(--secondary-blue);
     font-size: 2.5em;
     margin-bottom: 0.2em;
 }
 
 .header-subheading{
-    color: var(--light-secondary-blue);
+    color: var(--primary-text);
     margin-top: 0;
 }
