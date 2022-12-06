@@ -1,5 +1,7 @@
 import './App.css';
 import { Switch, Route, BrowserRouter} from 'react-router-dom';
+import { ThemeContext } from "./components/Theme";
+import { useContext } from 'react';
 
 /* local imports */
 import * as URLS from "./utils/AppUrls";
@@ -10,8 +12,9 @@ import CreativeCorner from './containers/CreativeCorner';
 import Work from './containers/Work';
 
 function App() {
+  const { theme } = useContext(ThemeContext);
   return (
-    <div>
+    <div className={`App ${theme}`}>
       <BrowserRouter>
         <Switch>
           <Route 
