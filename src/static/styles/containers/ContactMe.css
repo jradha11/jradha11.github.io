@@ -56,3 +56,7 @@
     font-size: 0.8em;
     color: #acacac;
 }
+
+.contact-me-outer-wrapper{
+    background: var(--background);
+}

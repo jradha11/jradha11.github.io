@@ -59,7 +59,7 @@ const ContactMe = () => {
         };
 
     return(
-        <div>
+        <div className="contact-me-outer-wrapper">
             <Navbar/>
             <Header header_data={header_data}/>
             <div className='page-content-container'>
