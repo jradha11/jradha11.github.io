@@ -1,20 +1,23 @@
 .homepage-container{
     position: absolute;
-    top: 8vh;
-    min-height: 92vh;
+    height: 100vh;
+}
+
+.homepage-outer-wrap{
+    background-color: var(--background);
 }
 .my-name{
     font-size: 3em;
     font-weight: bold;
     letter-spacing: 0.08em;
-    color: var(--light-dark-text);
+    color: var(--secondary-blue);
     margin: 0;
     margin-bottom: 0.6em;
     width: 10vw;
 }
 
 .homepage-subtext{
-    color: var(--light-primary-text);
+    color: var(--primary-text);
     font-size: 1.2em;
     margin: 0;
 }
@@ -50,7 +53,7 @@
 }
 
 .my-img{
-    height: 92vh;
+    height: 100vh;
     float: right;
 }
 

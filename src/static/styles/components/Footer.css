@@ -1,18 +1,18 @@
 .footer{
     text-align: center;
     font-size: 14px;
-    color: var(--light-secondary-text);
+    color: var(--primary-text);
     display: block;
     width: 100%;
-    margin-bottom: 6px;
+    padding-bottom: 6px;
 }
 
 .footer-link{
-    color: var(--light-secondary-text);
+    color: var(--primary-text);
 }
 
 .footer-link:hover{
-    color: var(--light-primary-text);
+    color: var(--primary-text);
 }
 
 @media screen and (max-width: 40em) {
