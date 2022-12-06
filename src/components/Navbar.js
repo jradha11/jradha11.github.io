@@ -44,35 +44,35 @@ const Navbar = () => {
                         <ul className="navlinks">
                             <Link to={URLS.ABOUT_ME} className='remove-underline'>
                                 <li>
-                                    <div className="navbar-items">
+                                    <div className="navbar-items hover-underline-animation">
                                         about me
                                     </div>
                                 </li>
                             </Link>
                             <Link to={URLS.WORK} className='remove-underline'>
                                 <li>
-                                    <div className="navbar-items">
+                                    <div className="navbar-items hover-underline-animation">
                                         work
                                     </div>
                                 </li>
                             </Link>
                             <Link to={URLS.CREATIVE_CORNER} className='remove-underline'>
                                 <li>
-                                    <div className="navbar-items">
+                                    <div className="navbar-items hover-underline-animation">
                                         creative corner
                                     </div>
                                 </li>
                             </Link>
                             <Link to={resume} className='remove-underline' target='__blank'>
                                 <li>
-                                    <div className="navbar-items">
+                                    <div className="navbar-items hover-underline-animation">
                                         resume
                                     </div>
                                 </li>
                             </Link>
                             <Link to={URLS.CONTACT_ME} className='remove-underline'>
                                 <li>
-                                    <div className="navbar-items">
+                                    <div className="navbar-items hover-underline-animation">
                                         contact me
                                     </div>
                                 </li>
