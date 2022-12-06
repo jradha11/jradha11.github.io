@@ -24,7 +24,7 @@ const AboutMe = () => {
     const header_data = PAGE_HEADING['ABOUT_ME'];
 
     return(
-        <div>
+        <div className="about-me-wrapper">
             <Navbar/>
             <Header header_data={header_data} />
             <div className='page-content-container'>
