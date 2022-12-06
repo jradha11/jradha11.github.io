@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import Brightness5Icon from '@mui/icons-material/Brightness5';
 
 
 /* css imports */
@@ -11,7 +13,8 @@ import "../static/styles/MediaQueries.css";
 import logo from "../static/images/mylogo-light.svg";
 import * as URLS from "../utils/AppUrls"
 import $ from 'jquery';
-import resume from "../static/radha_resume.pdf"
+import resume from "../static/radha_resume.pdf";
+import { ThemeContext } from "../components/Theme";
 
 const Navbar = () => {
     $(window).scroll(function() {
@@ -29,6 +32,13 @@ const Navbar = () => {
 
         /* need to add fadeout */
     }
+
+    const { theme, toggleTheme } = useContext(ThemeContext);
+    const themeStyle = {
+        color: 'var(--primary-text)'
+    }
+    console.log(theme);
+
     return(
             <nav className="nav">
                 <div className="nav-container">
@@ -77,6 +87,12 @@ const Navbar = () => {
                                     </div>
                                 </li>
                             </Link>
+                            <li onClick={toggleTheme}>
+                                <div>
+                                    {theme === "light-theme" ? <DarkModeIcon style={themeStyle}/> : <Brightness5Icon style={themeStyle}/>}
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                     <span className="navTrigger" onClick={navTriggerOnClick}>
