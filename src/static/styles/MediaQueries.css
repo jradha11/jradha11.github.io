@@ -189,7 +189,7 @@
         right: 0;
         left: 0;
         bottom: 0;
-        background-color:var(--light-primary-blue);
+        background-color:var(--primary-blue);
         /*same background color of navbar*/
     }
     body .nav div.main_list ul li {

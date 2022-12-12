@@ -10,7 +10,8 @@ import "../static/styles/CommonCss.css";
 import "../static/styles/MediaQueries.css";
 
 /* local imports */
-import logo from "../static/images/mylogo-light.svg";
+import logo_light from "../static/images/mylogo-light.svg";
+import logo_dark from "../static/images/mylogo-dark.svg";
 import * as URLS from "../utils/AppUrls"
 import $ from 'jquery';
 import resume from "../static/radha_resume.pdf";
@@ -39,13 +40,15 @@ const Navbar = () => {
     }
     console.log(theme);
 
+
+
     return(
             <nav className="nav">
                 <div className="nav-container">
                     <div className="logo">
                         <Link to={URLS.HOME_PAGE} className='remove-underline'>
                             <div style={{display: 'flex', alignItems: 'center'}}>
-                                <img src={logo} alt="my-logo" className='my-logo'/>
+                                <img src={theme === "light-theme" ? logo_light : logo_dark} alt="my-logo" className='my-logo'/>
                                 <p className='navbar-name'> RADHA JAYARAMAN </p>
                             </div>
                         </Link>
@@ -88,7 +91,7 @@ const Navbar = () => {
                                 </li>
                             </Link>
                             <li onClick={toggleTheme}>
-                                <div>
+                                <div className="navbar-items">
                                     {theme === "light-theme" ? <DarkModeIcon style={themeStyle}/> : <Brightness5Icon style={themeStyle}/>}
                                 </div>
                             </li>

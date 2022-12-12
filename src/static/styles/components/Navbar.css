@@ -75,7 +75,7 @@
 }
 
 .navTrigger i {
-    background-color: #2b2b2b;
+    background-color: var(--primary-text);
     border-radius: 2px;
     content: '';
     display: block;
