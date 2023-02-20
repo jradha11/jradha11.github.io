@@ -34,3 +34,7 @@
     width: 100%;
     object-fit: contain;
 }
+
+.creative-corner-wrapper{
+    background-color: var(--background);
+}
