@@ -59,7 +59,7 @@ const ContactMe = () => {
         };
 
     return(
-        <div>
+        <div className="contact-me-outer-wrapper">
             <Navbar/>
             <Header header_data={header_data}/>
             <div className='page-content-container'>
@@ -116,34 +116,33 @@ const ContactMe = () => {
 
                     <div className='contact-content-container'>
                         <p className='bold-blue-text contact-heading'>I welcome any idea, suggestion or a simple acknowledgement.</p>
-                        <TextField 
-                            id="outlined-basic" 
-                            label="Name" variant="outlined" 
-                            style={{width: '100%'}}
-                            value={who}
+                        <input 
+                            placeholder="Name" 
+                            className="form-field" 
+                            value={who} 
                             onChange={e => setWho(e.target.value)}
+                            required
+
                         />
                         <br/>
                         <br/>
-                        <TextField 
-                            id="outlined-basic" 
-                            label="Email Address" 
-                            variant="outlined" 
-                            style={{width: '100%'}}
-                            value={email}
+                        <input 
+                            placeholder="Email Address" 
+                            className="form-field" 
+                            value={email} 
                             onChange={e => setEmail(e.target.value)}
+                            required
                         />
                         <br/>
                         <br/>
-                        <TextField 
-                            id="outlined-basic" 
-                            label="Message" 
-                            variant="outlined" 
-                            multiline
-                            rows={6}
-                            style={{width: '100%'}}
-                            value={message}
+                        <textarea 
+                            placeholder="Message" 
+                            className="form-field" 
+                            value={message} 
                             onChange={e => setMessage(e.target.value)}
+                            rows= "6"
+                            required
+
                         />
                         
                         <br/>

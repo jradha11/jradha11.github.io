@@ -18,7 +18,7 @@ import * as URLS from "../utils/AppUrls";
 
 const HomePage = () => {
     return(
-        <div>
+        <div className="homepage-outer-wrap">
             <Navbar/>
             <div className='homepage-container'>
                 <div className='homepage-header'>

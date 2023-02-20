@@ -4,10 +4,9 @@
 }
 .work-card{
     display: flex;
-    background: #F9F9F9;
-    border: 1px solid #E5E5E5;
+    background: var(--background);
     box-sizing: border-box;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     margin-bottom: 2.5em;
     align-items: center;
@@ -22,13 +21,13 @@
 
 .card-subheading{
     margin: 0;
-    color: var(--light-secondary-blue);
+    color: var(--primary-text);
     font-size: 16px;
 }
 
 .card-content{
     font-size: 16px;
-    color: var(--light-primary-text);
+    color: var(--primary-text);
 }
 
 .card-data{
@@ -36,21 +35,21 @@
 }
 
 .action-btn{
-    background-color: var(--light-primary-blue);
+    background-color: var(--primary-blue);
     outline: none;
     border: none;
     padding: 8px 12px;
     border-radius: 4px;
     font-size: 16px;
-    color: var(--light-secondary-blue);
+    color: var(--secondary-blue);
     display: inline-block;
     text-decoration: none;
     margin-bottom: 0;
 }
 
 .action-btn:hover{
-    background-color: var(--light-secondary-blue);
-    color: var(--light-primary-blue);
+    background-color: var(--secondary-blue);
+    color: var(--primary-blue);
 }
 
 .card-img{
@@ -73,13 +72,12 @@
     justify-content: space-between;
     flex-wrap: wrap;
     margin-top: 2em;
-    margin-bottom: 4em;
+    padding-bottom: 4em;
 }
 
 .blog-card{
     max-width: 45%;
-    border: 1px solid #e5e5e5;
-    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+    box-shadow: 0px 8px 16px rgba(0, 0, 0, 0.1);
     border-radius: 8px;
     padding: 1em;
     margin-bottom: 1em;
@@ -93,22 +91,26 @@
 .blog-heading{
     font-size: 18px;
     font-weight: bold;
-    color: var(--light-secondary-blue);
+    color: var(--secondary-blue);
     margin-bottom: 0;
 }
 
 .blog-subheading{
     font-size: 16px;
-    color: var(--light-secondary-text);
+    color: var(--primary-text);
     margin-top: 0.25em;
 }
 
 .blog-link{
-    color: var(--light-secondary-blue);
+    color: var(--primary-text);
     float: right;
     font-size: 16px;
 }
 
 .blog-link:visited{
-    color: var(--light-secondary-blue);
+    color: var(--dark-primary-text);
+}
+
+.work-wrapper{
+    background-color: var(--background);
 }

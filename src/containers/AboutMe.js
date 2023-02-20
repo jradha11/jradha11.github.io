@@ -24,7 +24,7 @@ const AboutMe = () => {
     const header_data = PAGE_HEADING['ABOUT_ME'];
 
     return(
-        <div>
+        <div className="about-me-wrapper">
             <Navbar/>
             <Header header_data={header_data} />
             <div className='page-content-container'>
@@ -48,7 +48,7 @@ const AboutMe = () => {
                     or simply standing out in the balcony and admiring the vastness of sky.
                     <br></br>
                     <br></br>
-                    Also, I am beach person. 
+                    Also, I am a beach person. 
                 </p>
                 <br/>
                 <br/>

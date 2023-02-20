@@ -1,5 +1,7 @@
-import React from "react";
+import React, {useContext, useEffect, useState} from "react";
 import { Link } from "react-router-dom";
+import DarkModeIcon from '@mui/icons-material/DarkMode';
+import Brightness5Icon from '@mui/icons-material/Brightness5';
 
 
 /* css imports */
@@ -8,10 +10,12 @@ import "../static/styles/CommonCss.css";
 import "../static/styles/MediaQueries.css";
 
 /* local imports */
-import logo from "../static/images/mylogo-light.svg";
+import logo_light from "../static/images/mylogo-light.svg";
+import logo_dark from "../static/images/mylogo-dark.svg";
 import * as URLS from "../utils/AppUrls"
 import $ from 'jquery';
-import resume from "../static/radha_resume.pdf"
+import resume from "../static/radha_resume.pdf";
+import { ThemeContext } from "../components/Theme";
 
 const Navbar = () => {
     $(window).scroll(function() {
@@ -29,13 +33,22 @@ const Navbar = () => {
 
         /* need to add fadeout */
     }
+
+    const { theme, toggleTheme } = useContext(ThemeContext);
+    const themeStyle = {
+        color: 'var(--primary-text)'
+    }
+    console.log(theme);
+
+
+
     return(
             <nav className="nav">
                 <div className="nav-container">
                     <div className="logo">
                         <Link to={URLS.HOME_PAGE} className='remove-underline'>
                             <div style={{display: 'flex', alignItems: 'center'}}>
-                                <img src={logo} alt="my-logo" className='my-logo'/>
+                                <img src={theme === "light-theme" ? logo_light : logo_dark} alt="my-logo" className='my-logo'/>
                                 <p className='navbar-name'> RADHA JAYARAMAN </p>
                             </div>
                         </Link>
@@ -77,6 +90,12 @@ const Navbar = () => {
                                     </div>
                                 </li>
                             </Link>
+                            <li onClick={toggleTheme}>
+                                <div className="navbar-items">
+                                    {theme === "light-theme" ? <DarkModeIcon style={themeStyle}/> : <Brightness5Icon style={themeStyle}/>}
+                                </div>
+                            </li>
+
                         </ul>
                     </div>
                     <span className="navTrigger" onClick={navTriggerOnClick}>

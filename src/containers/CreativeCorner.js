@@ -23,7 +23,7 @@ const CreativeCorner = () => {
     const header_data = PAGE_HEADING['CREATIVE_CORNER']
     const img_index = [i1, i2, i3, i4, i5, i6]
     return(
-        <div>
+        <div className="creative-corner-wrapper">
             <Navbar/>
             <Header header_data={header_data}/>
             <div className='page-content-container'>

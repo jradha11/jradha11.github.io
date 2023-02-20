@@ -21,7 +21,7 @@ import Footer from "../components/Footer";
 const Work = () => {
     const header_data = PAGE_HEADING['WORK']
     return(
-        <div>
+        <div className="work-wrapper">
             <Navbar/>
             <Header header_data={header_data}/>
             <div className='page-content-container'>

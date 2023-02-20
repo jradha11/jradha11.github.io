@@ -10,12 +10,12 @@
     font-weight: bold;
     margin: 0;
     margin-left: 1em;
-    color: var(--light-dark-text);
+    color: var(--primary-text);
 }
 
 .navbar-items{
     text-decoration: none;
-    color: var(--light-primary-text);
+    color: var(--primary-text);
     font-weight: 600;
 }
 
@@ -75,7 +75,7 @@
 }
 
 .navTrigger i {
-    background-color: #2b2b2b;
+    background-color: var(--primary-text);
     border-radius: 2px;
     content: '';
     display: block;
@@ -254,7 +254,7 @@
 
 .affix {
     padding: 0;
-    background-color: var(--light-primary-blue);
+    background-color: var(--primary-blue);
 }
 
 div.hover-underline-animation {
@@ -270,7 +270,7 @@ div.hover-underline-animation:after {
     height: 2px;
     bottom: 0;
     left: 0;
-    background-color: var(--light-primary-text);
+    background-color: var(--primary-text);
     transform-origin: bottom right;
     transition: transform 0.25s ease-out;
 }
