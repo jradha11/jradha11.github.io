@@ -4,6 +4,7 @@
   "private": true,
   "homepage": "https://jradha11.github.io",
   "dependencies": {
+    "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.10.5",
     "@emotion/styled": "^11.10.5",
     "@fortawesome/fontawesome-svg-core": "^1.2.36",
@@ -21,9 +22,13 @@
     "react-bootstrap": "^2.1.2",
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.22",
-    "react-router-dom": "^5.2.0",
-    "react-scripts": "4.0.3",
+    "react-router-dom": "^6.23.1",
+    "react-scripts": "5.0.1",
     "web-vitals": "^1.1.2"
+  },
+  "devDependencies": {
+    "gh-pages": "^4.0.0",
+    "shx": "^0.3.4"
   },
   "scripts": {
     "start": "react-scripts start",
@@ -50,10 +55,5 @@
       "last 1 firefox version",
       "last 1 safari version"
     ]
-  },
-  "devDependencies": {
-    "gh-pages": "^4.0.0",
-    "react-error-overlay": "^6.0.9",
-    "shx": "^0.3.4"
   }
 }

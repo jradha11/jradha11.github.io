@@ -30,25 +30,61 @@ const AboutMe = () => {
             <div className='page-content-container'>
                 <p className='bold-blue-text primary-text-font'> Hi there 😊<br></br> I’m Radha. </p>
                 <p className='light-theme-content primary-text-font'>
-                    I graduated from IIT Roorkee in May 2022 with a bachelors degree in Chemical Engineering. Tamilian by native, I have been born and brought up in Delhi. 
-                    Throughout the entirity of my college life I tried to explore as much as I could. Starting with design, diving into web development and machine learning, and eventually applied
-                    these skills by working in a B2C startup <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a>, for a good year and a half.   
-                    <a href='https://explorin.io' target='__blank' className='anchor-tag-link'>Explorin</a> aims at making every college student financially independent, 
-                    by providing a holistic career exploration program inclusive of all the popular industry fields.                    
-                    I have also contributed to the java bindings of <a href='https://github.com/OpenTimelineIO/OpenTimelineIO-Java-Bindings' target='__blank' className='anchor-tag-link'>OpenTimelineIo</a>, an API interchange format lead by Pixar Animated Studios.
-                </p>
-                <p className='light-theme-content primary-text-font'>
-                    Currently, I am working as a Software Engineer at JP Morgan Chase & Co.
+                <p className='bold-blue-text primary-text-font'> UI and UX</p>
+                I have always been a naturally creative person, drawn to fields where I could make learning fun 
+                and accessible. During my undergraduate years at IIT-Roorkee, I ventured into UI/UX with my
+                college design group (<a href="https://www.instagram.com/ds_iitr/?hl=en" target="__blank" className="anchor-tag-link">
+                Design Studio</a>) and completed a small UX project called Canteen Hub, reimagining my college’s 
+                food delivery system. I published it on <a href="https://medium.com/@radhajayaraman11/canteen-hub-37cde226fa18" 
+                target="__blank" className="anchor-tag-link">Medium</a>, where it received encouraging traction.
+                
+                <br></br>
+
+                <p className='bold-blue-text primary-text-font'> Design and Development</p>
+                While I enjoyed thinking through design problems, I became curious about how these ideas transform 
+                into real-world applications. This led me to web development. I freelanced for a  <a href="https://sgpg.in/" 
+                target="__blank" className="anchor-tag-link">CA firm</a>, building both the UI and backend of their Django-based website — my first experience seeing a project 
+                through from a Figma board to a customer-facing product.
+                <br></br>
+
+                <p className='bold-blue-text primary-text-font'> Startup and Product</p>
+                In 2020, a few seniors from college were starting an edtech venture focused on democratizing 
+                education for undergraduates. I joined at an early stage, making major contributions to the website 
+                and frontend on both design and engineering side. Over time, I transitioned into leading the development 
+                of an onboarding portal for students, conceptualizing the product, drafting MVPs for the UI/UX, 
+                and leading backend development. <i> This experience allowed me to wear multiple hats — from product management 
+                to hands-on engineering — and gave me a full end-to-end perspective on product building.</i>
+                <br></br>
+
+
+                <p className='bold-blue-text primary-text-font'> Industry Experience at JPMorganChase</p>
+                After graduating in 2022, I began my journey at JPMorgan Chase as an MLOps Intern. 
+                Although I entered with little prior experience in cloud technologies, I quickly ramped up, 
+                learning AWS, Terraform, and large-scale systems. Within just eight months, 
+                I helped deliver a cost-optimized batch serving pipeline on AWS to deploy a machine learning 
+                model for industry tag prediction. Our work was recognized with the prestigious JPMC Impact 
+                Award, and I was promoted to Software Engineer 2 ahead of schedule. Since then, I've continued 
+                deepening my expertise across MLOps and Data Engineering. More recently, I worked closely with 
+                my teammates to build a data quality engine, where I led the engineering and 
+                implementation side—integrating statistical models into existing data pipelines and ensuring 
+                they scaled reliably in production environments.
+                <br></br>
+
+                Beyond project work, I have mentored two summer interns and driven their projects to completion, 
+                and participated in JPMC’s Bangalore Hackathon, where our team ranked among the Top 10 for building 
+                an LLM-powered engine for marketing and prospecting.
+                <br></br>
+
+                These days I am exploring Databricks to build and deploy ML workflows, constantly striving to blend engineering excellence with my passion for solving impactful problems.
                 </p>
                 <br></br>
-                <p className='bold-blue-text primary-text-font'> All work and no play makes Jack a dull boy 😥 </p>
+                <p className='bold-blue-text primary-text-font'> Life after work </p>
                 <p className='light-theme-content primary-text-font'>
-                    When I am not working you’ll mostly find me painting (I love acrylics!), <br/>
-                    or strumming my guitar and humming some song, <br/>
-                    or simply standing out in the balcony and admiring the vastness of sky.
-                    <br></br>
-                    <br></br>
-                    Also, I am a beach person. 
+                Outside of work, you’ll usually find me with a book in hand — I love diving into fiction as a way to relax and spark creativity. 
+                I also play the guitar, which has been my favorite way to unwind and reset. 
+                I'm deeply fascinated by how AI and LLMs are reshaping the world in ways we are just 
+                beginning to grasp — often finding eerie parallels with <b> Orwell’s 1984 </b>. It’s a 
+                thrilling time to be alive, and I’m excited to keep learning, building, and contributing to this next wave of technology.
                 </p>
                 <br/>
                 <br/>

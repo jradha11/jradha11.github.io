@@ -36,10 +36,10 @@ const CreativeCorner = () => {
                         })}
                     </div>
                 </div>
-                <div className='view-more-container'>
+                {/* <div className='view-more-container'>
                     <p className='bold-blue-text'>Liked what you saw? Checkout my insta profile to find some more!</p>
                     <a className='view-more' href={INSTAGRAM_URL} target='__blank'>click here</a>
-                </div>
+                </div> */}
             </div>
             <Footer/>
         </div>

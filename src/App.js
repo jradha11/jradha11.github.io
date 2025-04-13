@@ -1,5 +1,5 @@
 import './App.css';
-import { Switch, Route, BrowserRouter} from 'react-router-dom';
+import { Routes, Route, BrowserRouter} from 'react-router-dom';
 import { ThemeContext } from "./components/Theme";
 import { useContext } from 'react';
 
@@ -16,33 +16,33 @@ function App() {
   return (
     <div className={`App ${theme}`}>
       <BrowserRouter>
-        <Switch>
+        <Routes>
           <Route 
             exact
             path={URLS.HOME_PAGE}
-            component = {HomePage}
+            element = {<HomePage/>}
           />
           <Route 
             exact
             path={URLS.ABOUT_ME}
-            component = {AboutMe}
+            element = {<AboutMe/>}
           />
           <Route 
             exact
             path={URLS.WORK}
-            component = {Work}
+            element = {<Work/>}
           />
           <Route 
             exact
             path={URLS.CREATIVE_CORNER}
-            component = {CreativeCorner}
+            element = {<CreativeCorner/>}
           />
           <Route 
             exact
             path={URLS.CONTACT_ME}
-            component = {ContactMe}
+            element = {<ContactMe/>}
           />
-        </Switch>
+        </Routes>
       </BrowserRouter>
     </div>
   );
