@@ -2,7 +2,7 @@
   "name": "jradha11.github.io",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://jradha11.github.io",
+  "homepage": "https://jradha11.github.io/",
   "dependencies": {
     "@emailjs/browser": "^4.4.1",
     "@emotion/react": "^11.10.5",
@@ -23,20 +23,20 @@
     "react-dom": "^18.2.0",
     "react-responsive-carousel": "^3.2.22",
     "react-router-dom": "^6.23.1",
-    "react-scripts": "5.0.1",
+    "react-scripts": "5.0.1", 
     "web-vitals": "^1.1.2"
   },
   "devDependencies": {
-    "gh-pages": "^4.0.0",
+    "gh-pages": "^6.3.0",
     "shx": "^0.3.4"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build && shx cp build/index.html build/404.html",
-    "test": "react-scripts test",
-    "eject": "react-scripts eject",
     "predeploy": "npm run build",
-    "deploy": "gh-pages -d build"
+    "deploy": "gh-pages -b gh-pages -d build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject"
   },
   "eslintConfig": {
     "extends": [
